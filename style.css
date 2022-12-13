@@ -5,8 +5,6 @@
 }
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    scroll-behavior: smooth;
-    
 
 }
 
@@ -70,39 +68,17 @@ html{
 }
 #nav .btn{
 }
-.container{
-    padding-top: 70px;
-}
-.gr-profile{
-    display: flex;
-    margin-left: -100px;
-    
-}
-.profile-item.sec{
-    background-color: #23a6d5 !important;
-}
 .gr-profile .profile-item{
     height: 400px;
-    width: 20%;
+    max-width: 200px;
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
-    margin-left: 100px;
-    padding: 15px;
-    overflow: hidden;
-    
-    
-    
     
 }
-.gr-profile .profile-item:hover{
-    
-}
-
-
 .profile-item .profile-name .name{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     color: white;
     padding-bottom: 20px;
 }
@@ -111,14 +87,10 @@ html{
     font-size: 14px;
 }
 .profile-item .profile-image img{
-    width:45%;
+    width: 45%;
     border-radius: 50%;
     margin-bottom: 25px;
     margin-top: 25px;
-    object-fit: cover;
-}
-.profile-contact{
-    
 }
 .profile-item .contact-icon{
     display: flex;
