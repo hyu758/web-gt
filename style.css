@@ -7,6 +7,14 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+.header{
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    top:20px
+}
+
 .slider{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
@@ -27,12 +35,7 @@ html{
     color: transparent;
     animation: gradient 2s ease infinite;
 }
-.header{
-    position: absolute;
-    width: 100%;
-    height: 46px;
-    top:20px
-}
+
 #nav .list{
     
 }
