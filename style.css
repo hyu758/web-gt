@@ -33,44 +33,151 @@ html{
     height: 46px;
     top:20px
 }
+
 #nav .list{
-    
+    display: inline-block;
 }
+
+#nav .list> li{
+    display: inline-block;
+    padding:20px 0
+}
+
+#nav .list li{
+    position: relative;
+}
+
 #nav .ul{
     left: 20%;
 }
-#nav .list li{
-    display: inline-block;
-}
-#nav .list li a{
+
+#nav .list> li> a{
     color: white;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 46px;
-    padding: 24px;
     margin: 12px;
     text-transform: uppercase;
     font-weight: 550;
-    
-    
 }
-#nav .list li a:hover{
+    
+#nav .list > li > a{
+    padding: 24px;
+}
+
+#nav .list li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 46px;
+}
+
+
+
+#nav li:hover .subnav{
+    display: block;
+    border-radius: 20px;
+    background-color: #62C4C3;
+}
+
+#nav .subnav li:hover a{
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav .list> li:hover> a{
     background-color: white;
     color: purple;
     border-radius: 20px;
 }
 
+
+
+#nav .subnav{
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    top: 96%;
+    left: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav{
+    list-style-type: none;
+}
+
+#nav .subnav a{
+    padding:0 12px;
+    color:#000;
+    line-height: 38px;
+}
+
+.search-box{
+    background-color: rgba(170, 167, 167, 0.4);
+    height: 50px;
+    border-radius: 40px;
+    padding: 25px;
+    position: relative;
+    margin-right: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.search-box .search-btn{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(170, 167, 167, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-box .ti-search{
+    color:#fff;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.search-box .search-write{
+    display: none;
+    float: left;
+    padding: 0;
+    color: white;
+    transition: 0.4s;
+    margin-top: -12px;
+    margin-left: -16px;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.search-box:hover .search-write{
+    display: block;
+}
+
+.search-box:hover .search-btn{
+    background-color:#ccc ;
+}
 .header #nav{
     
 }
 #nav .btn{
 }
 .gr-profile .profile-item{
-    height: 400px;
-    max-width: 200px;
+    display: inline-block;
+    height: 450px;
+    max-width: 250px;
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
+    margin: 0 65px;
     
 }
 .profile-item .profile-name .name{
@@ -92,8 +199,8 @@ html{
 .profile-item .contact-icon{
     display: flex;
     justify-content: space-around;
-    margin: 30px;
-    font-size: 20px;
+    margin: 35px 20px 0;
+    font-size: 30px;
     
 }
 .contact-icon a{
