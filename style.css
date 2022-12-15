@@ -35,15 +35,12 @@ html{
     color: transparent;
     animation: gradient 2s ease infinite;
 }
-<<<<<<< HEAD
 .header{
     position: absolute;
     width: 100%;
     height: 46px;
     top:20px
 }
-=======
->>>>>>> 8b0cb3b207ba1d578e72cccf9666a8a2bf81284c
 
 #nav .list{
     display: inline-block;
@@ -91,7 +88,9 @@ html{
     display: block;
 }
 
-#nav .subnav li:hover a,
+#nav .subnav li:hover a{
+
+}
 #nav .list> li:hover> a{
     background-color: white;
     color: purple;
@@ -181,15 +180,20 @@ html{
 }
 #nav .btn{
 }
+.gr-profile{
+    display: flex;
+    margin-left: -30px;
+}
 .gr-profile .profile-item{
-    display: inline-block;
-    height: 450px;
-    max-width: 250px;
+    height: 400px;
+    width: 20%;
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
-    margin: 0 65px;
-    
+    margin-left: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 30px;
 }
 .profile-item .profile-name .name{
     font-weight: 600;
