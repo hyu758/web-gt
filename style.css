@@ -195,6 +195,9 @@ html{
     overflow: hidden;
     margin-left: 30px;
 }
+.profile-item.sec{
+    background-color: #23a6d5 !important;
+}
 .profile-item .profile-name .name{
     font-weight: 600;
     font-size: 18px;
