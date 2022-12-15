@@ -5,7 +5,7 @@
 }
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -88,9 +88,7 @@ html{
     display: block;
 }
 
-#nav .subnav li:hover a{
 
-}
 #nav .list> li:hover> a{
     background-color: white;
     color: purple;
