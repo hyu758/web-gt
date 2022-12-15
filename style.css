@@ -8,6 +8,29 @@ html{
     scroll-behavior: smooth;
 }
 
+.row::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.mt8{
+    margin-top:8px ;
+}
+.mt16{
+    margin-top: 16px;
+}
+.col{
+    float: left;
+    padding-left: 12px;
+    /* padding-right: 8px; */
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
 .header{
     position: absolute;
     width: 100%;
@@ -178,6 +201,9 @@ html{
 }
 #nav .btn{
 }
+.container{
+    padding: 30px;
+}
 .gr-profile{
     display: flex;
     margin-left: -30px;
@@ -219,6 +245,23 @@ html{
     font-size: 30px;
     
 }
+.content-section .section-heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.content-section h2{
+    font-weight: 500;
+    
+}
+.col.contact-info p{
+    padding: 2px;
+}
+.row.contact-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
 .contact-icon a{
     text-decoration: none;
     color: white;
@@ -231,6 +274,43 @@ html{
     color: black;
     background: white;
     cursor: pointer;
+}
+#contact{
+    padding-top: 80px;
+}
+
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.contact-form{
+    font-size: 15px;
+    float: right!important;
+}
+.contact-form .form-control{
+    padding:10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding-right:0px;
+}
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    background-color: #000;
+    color: white;
+    padding: 10px 16px;
+    float: right;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.contact-form .form-submit-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+.footer{
+    height: 200px;
 }
 @keyframes gradient {
 	0% {
