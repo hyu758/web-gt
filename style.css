@@ -74,8 +74,14 @@ html{
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
+    display: inline-block;
+
+}
+
+.profile-item {
     
 }
+
 .profile-item .profile-name .name{
     font-weight: 600;
     font-size: 18px;
