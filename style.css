@@ -5,9 +5,32 @@
 }
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    scroll-behavior: smooth;
 }
 
+.row::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.mt8{
+    margin-top:8px ;
+}
+.mt16{
+    margin-top: 16px;
+}
+.col{
+    float: left;
+    padding-left: 12px;
+    /* padding-right: 8px; */
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
 .header{
     position: absolute;
     width: 100%;
@@ -35,51 +58,182 @@ html{
     color: transparent;
     animation: gradient 2s ease infinite;
 }
+.header{
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    top:20px
+}
 
 #nav .list{
-    
+    display: inline-block;
 }
+
+#nav .list> li{
+    display: inline-block;
+    padding:20px 0
+}
+
+#nav .list li{
+    position: relative;
+}
+
 #nav .ul{
     left: 20%;
 }
-#nav .list li{
-    display: inline-block;
-}
-#nav .list li a{
+
+#nav .list> li> a{
     color: white;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 46px;
-    padding: 24px;
     margin: 12px;
     text-transform: uppercase;
     font-weight: 550;
-    
-    
 }
-#nav .list li a:hover{
+    
+#nav .list > li > a{
+    padding: 24px;
+}
+
+#nav .list li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 46px;
+}
+
+
+#nav li .subnav{
+    background-color:white;
+}
+
+#nav li:hover .subnav{
+    display: block;
+    border-radius: 20px;
+    background-color: #62C4C3;
+}
+
+#nav .subnav li:hover a{
+    display: block;
+}
+
+
+#nav .list> li:hover> a{
     background-color: white;
     color: purple;
     border-radius: 20px;
 }
 
+
+
+#nav .subnav{
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    top: 96%;
+    left: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav{
+    list-style-type: none;
+}
+
+#nav .subnav a{
+    padding:0 12px;
+    color:#000;
+    line-height: 38px;
+}
+
+.search-box{
+    background-color: rgba(170, 167, 167, 0.4);
+    height: 50px;
+    border-radius: 40px;
+    padding: 25px;
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+    float: right;
+    margin-top:20px
+}
+
+.search-box .search-btn{
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(170, 167, 167, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-box .ti-search{
+    color:#fff;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.search-box .search-write{
+    display: none;
+    float: left;
+    padding: 0;
+    color: white;
+    transition: 0.4s;
+    margin-top: -12px;
+    margin-left: -16px;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.search-box:hover .search-write{
+    display: block;
+}
+
+.search-box:hover .search-btn{
+    background-color:#ccc ;
+}
 .header #nav{
     
 }
 #nav .btn{
 }
+.container{
+    padding: 30px;
+}
+.gr-profile{
+    display: flex;
+    margin-left: -30px;
+}
 .gr-profile .profile-item{
     height: 400px;
-    max-width: 200px;
+    width: 20%;
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
+<<<<<<< HEAD
     display: inline-block;
 
 }
 
 .profile-item {
     
+=======
+    margin-left: 100px;
+    padding: 15px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+.profile-item.sec{
+    background-color: #23a6d5 !important;
+>>>>>>> 41979fd57b1da89f3e36b9ff8b6d21e1e482e8ae
 }
 
 .profile-item .profile-name .name{
@@ -101,9 +255,26 @@ html{
 .profile-item .contact-icon{
     display: flex;
     justify-content: space-around;
-    margin: 30px;
-    font-size: 20px;
+    margin: 35px 20px 0;
+    font-size: 30px;
     
+}
+.content-section .section-heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.content-section h2{
+    font-weight: 500;
+    
+}
+.col.contact-info p{
+    padding: 2px;
+}
+.row.contact-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
 }
 .contact-icon a{
     text-decoration: none;
@@ -117,6 +288,43 @@ html{
     color: black;
     background: white;
     cursor: pointer;
+}
+#contact{
+    padding-top: 80px;
+}
+
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.contact-form{
+    font-size: 15px;
+    float: right!important;
+}
+.contact-form .form-control{
+    padding:10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding-right:0px;
+}
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    background-color: #000;
+    color: white;
+    padding: 10px 16px;
+    float: right;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.contact-form .form-submit-btn:hover{
+    color: #000;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+.footer{
+    height: 200px;
 }
 @keyframes gradient {
 	0% {
