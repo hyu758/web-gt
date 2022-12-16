@@ -200,11 +200,7 @@ html{
 .search-box:hover .search-btn{
     background-color:#ccc ;
 }
-.header #nav{
-    
-}
-#nav .btn{
-}
+
 .container{
     padding: 30px;
 }
@@ -218,6 +214,14 @@ html{
     background-color: rgb(234, 87, 87);
     border-radius: 20px;
     text-align: center;
+<<<<<<< HEAD
+    display: inline-block;
+
+}
+
+.profile-item {
+    
+=======
     margin-left: 100px;
     padding: 15px;
     overflow: hidden;
@@ -225,7 +229,9 @@ html{
 }
 .profile-item.sec{
     background-color: #23a6d5 !important;
+>>>>>>> 41979fd57b1da89f3e36b9ff8b6d21e1e482e8ae
 }
+
 .profile-item .profile-name .name{
     font-weight: 600;
     font-size: 18px;
