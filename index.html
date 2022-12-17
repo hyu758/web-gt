@@ -17,6 +17,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#member">Member</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a class ="js-about" href="#">About us</a></li>
                     </ul>
                     <!--begin search button-->
             <div class="search-box">
@@ -62,7 +63,7 @@
                 </div>
                 <div class="profile-item sec ">
                     <div class="profile-image">
-                        <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/318636517_665459888563483_1806183929117639226_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=UaoevDydgpcAX-rmhpG&tn=2WUdDyLzUGPfF4R-&_nc_ht=scontent.fhan18-1.fna&oh=03_AdSBg9K0Rim1l_i3CR6qROx9HARXm9O4N_mPyEyatmMdtw&oe=63C29B4D" alt="">
+                        <img src="/img/member-img/giap.jpg" alt="">
                     </div>
                     <div class="profile-name">
                         <p class="name">Nguyễn Xuân Giáp</p>
@@ -105,8 +106,8 @@
                         <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-1/318466993_943020913339901_6175917496762437736_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=7206a8&_nc_ohc=WUsAQkavw9MAX9QHj5M&_nc_ht=scontent.fhan18-1.fna&oh=00_AfAgT6lzr17ugml6X-09odjKas6UtsD4gXrjyWq3WX1V0A&oe=639F8C5C" alt="">
                     </div>
                     <div class="profile-name">
-                        <p class="name">Nguyễn Quang Huy</p>
-                        <p class="introduction">Tất tay theo Argentina</p>
+                        <p class="name">Nguyen Quang Huy</p>
+                        <p class="introduction">Dep trai nhat nhom</p>
                     </div>
                     
                     <div class="profile-contact">
@@ -114,7 +115,7 @@
                             <a href="https://www.facebook.com/huynguyenn.1204">
                                 <i class="ti-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/huynguyen_1204/">
+                            <a href="">
                                 <i class="ti-instagram"></i>
                             </a>
                         </div>
@@ -156,7 +157,7 @@
                     <p><i class="ti-email"></i>f88@tlit.com</p>
                 </div>
                 <div class="col col-half contact-form">
-                    <form action="#">
+                    <form action="">
                         <div class="row">
                             <div class="col col-half">
                                 <input type="text" name="" placeholder="Name" required id="" class="form-control">
@@ -180,5 +181,61 @@
         </div>
         <div class="footer"></div>
     </div>
+    <div class="about-us js-about-us">
+        <div class="about-container js-about-container">
+            <div class="about-close js-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="about-header">
+                <div class="tlit">
+                    <img src="/img/tlit/avatar.png" alt="">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Our Mentors</h2>
+                <div class="mentor-profile">
+                    <div class="mentor-info">
+                        <div class="mentor-img">
+                            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/301872360_1237217880400932_1454765160028496703_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YsKEGbv4pC8AX-Z9HHE&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBKNiWBPSPvY0aMgyXb5Egbs0nu1C1tlzPjVIRPfKhWsw&oe=63A1A290" alt="">
+                        </div>
+                        <div class="mentor-name">
+                            <p>Nguyen Manh Tuan</p>
+                        </div>
+                    </div>
+                    <div class="mentor-info">
+                        <div class="mentor-img">
+                            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t1.6435-9/159517245_1649648748570218_5721688139223110814_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IX1hxIfxdfAAX8CWbVm&_nc_ht=scontent.fhan18-1.fna&oh=00_AfB7ZWvzhdr8O0wB0tsX8A35LzavxSiUJa0LeMDWfH_FUw&oe=63C497B5" alt="">
+                        </div>
+                        <div class="mentor-name">
+                            <p>Phung Phu Duc</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="content">
+                        <p></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const aboutTeam = document.querySelector(".js-about")
+        const about = document.querySelector(".js-about-us")
+        const closeAbout = document.querySelector(".js-close")
+        const aboutContainer = document.querySelector(".js-about-container")
+        function showAbout() {
+            about.classList.add('open')
+        }
+        function removeAbout() {
+            about.classList.remove('open')
+        }
+        aboutTeam.addEventListener('click',showAbout)
+        closeAbout.addEventListener('click',removeAbout)
+        about.addEventListener('click',removeAbout)
+        aboutContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+    </script>
 </body>
 </html>
