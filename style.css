@@ -333,14 +333,14 @@ html{
 
 .about-container{
     background-color: rgb(223, 165, 255);
-    width: 1200px;
+    width: 1000px;
     min-height: 200px;
     border-radius: 20px;
     animation: fadeIn ease-out .3s;
 }
 .tlit img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 .tlit{
@@ -349,7 +349,7 @@ html{
 }
 .about-header{
     margin-top: 30px;
-    margin-bottom: 50px
+    margin-bottom: 30px
 }
 .about-close{
     font-size: 24px;
@@ -369,39 +369,40 @@ html{
     
 }
 .about-content h2{
-    font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    margin-left: 149px;
-
-    
+    margin-bottom: 30px;
+    margin-left: 360px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: xx-large;
 }
 .mentor-profile{
     display: flex;
     
 }
 .mentor-info{
-    background-color: white;
-    height: 350px;
-    width: 200px;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 100px;
-    padding: 15px;
-    overflow: hidden;
-    margin-left: 30px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    height: 100%;
+    color: rgb(255, 255, 255);
+    width: 380px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 132px;
 }
 .mentor-img img{
-    border-radius: 50%;
-    width: 100px;
-    height:100px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    color: transparent;
+    width: 280px;
+    aspect-ratio: auto 320 / 320;
+    height: 280px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 280px;
+    border-radius: 30px;
 }
 .mentor-name p{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 40px;
 }
 @keyframes gradient {
 	0% {
